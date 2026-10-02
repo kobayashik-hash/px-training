@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="ゲーム内の意思決定を、現実の能力へ接続するBusiness Insight。">
+  <title>SPLENDOR Business Insight — THE GUILD</title>
+  <link rel="stylesheet" href="../../shared/styles.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="splendor-page" data-page="insight" data-game="splendor">
+  <a class="skip-link" href="#main">本文へ移動</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="ゲームガイドへ戻る">
+      <span class="brand-mark" aria-hidden="true">◆</span>
+      <span>THE GUILD</span>
+    </a>
+    <div class="header-status insight-status">
+      <span class="status-dot" aria-hidden="true"></span>
+      振り返り
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="insight-hero section-full" aria-labelledby="insight-title">
+      <div class="insight-rings" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="section-inner">
+        <p class="eyebrow reveal">ビジネス・インサイト / 振り返り</p>
+        <h1 id="insight-title" class="insight-display reveal">ゲームは、<br>意思決定の<br>テストだった。</h1>
+        <p class="hero-lead reveal">無意識の選択を、<br>意識的な能力へ。</p>
+      </div>
+    </section>
+
+    <section class="flow-section section-full" aria-labelledby="flow-title">
+      <div class="section-inner">
+        <p class="section-index reveal">体験を能力へつなぐ流れ</p>
+        <h2 id="flow-title" class="sr-only">Play Reflect Connect Apply</h2>
+        <div class="learning-flow reveal">
+          <article class="flow-item is-current">
+            <span>01</span><strong>遊ぶ</strong><p>PLAY</p>
+          </article>
+          <i aria-hidden="true"></i>
+          <article class="flow-item">
+            <span>02</span><strong>振り返る</strong><p>REFLECT</p>
+          </article>
+          <i aria-hidden="true"></i>
+          <article class="flow-item">
+            <span>03</span><strong>つなぐ</strong><p>CONNECT</p>
+          </article>
+          <i aria-hidden="true"></i>
+          <article class="flow-item">
+            <span>04</span><strong>試す</strong><p>APPLY</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reflect-section section-full" id="reflect" aria-labelledby="reflect-title">
+      <div class="section-inner">
+        <p class="section-index reveal">01 / 振り返る</p>
+        <h2 id="reflect-title" class="section-title reveal">何を選び、<br>何を捨てた？</h2>
+        <p class="statement-copy reveal">結果ではなく、選択の瞬間を思い出す。</p>
+
+        <div class="reflection-stack reveal">
+          <button class="reflection-card" type="button" aria-expanded="false">
+            <span class="reflection-no">Q1</span>
+            <strong>最初に狙ったカードは？</strong>
+            <p>その選択を変えたのは、どの情報だった？</p>
+            <i>＋</i>
+          </button>
+          <button class="reflection-card" type="button" aria-expanded="false">
+            <span class="reflection-no">Q2</span>
+            <strong>予約した瞬間は？</strong>
+            <p>自分のためか、相手を止めるためか。</p>
+            <i>＋</i>
+          </button>
+          <button class="reflection-card" type="button" aria-expanded="false">
+            <span class="reflection-no">Q3</span>
+            <strong>計画を捨てた瞬間は？</strong>
+            <p>何を見て、方向を変えた？</p>
+            <i>＋</i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="connect-section section-full" id="connect" aria-labelledby="connect-title">
+      <div class="section-inner">
+        <p class="section-index reveal">02 / 能力につなぐ</p>
+        <h2 id="connect-title" class="mega-title compact reveal">意思決定<br>マップ</h2>
+        <p class="mechanic-thesis reveal">盤上の行動には、名前がある。</p>
+
+        <div class="decision-map reveal">
+          <button class="decision-row is-active" type="button" data-capability="asset">
+            <span class="decision-game">宝石をカードへ変える</span>
+            <i aria-hidden="true">→</i>
+            <span class="decision-cap">資産化</span>
+          </button>
+          <button class="decision-row" type="button" data-capability="investment">
+            <span class="decision-game">得点かボーナスか</span>
+            <i aria-hidden="true">→</i>
+            <span class="decision-cap">成長投資</span>
+          </button>
+          <button class="decision-row" type="button" data-capability="opportunity">
+            <span class="decision-game">10個の上限で選ぶ</span>
+            <i aria-hidden="true">→</i>
+            <span class="decision-cap">機会費用</span>
+          </button>
+          <button class="decision-row" type="button" data-capability="backcast">
+            <span class="decision-game">欲しいカードから逆算</span>
+            <i aria-hidden="true">→</i>
+            <span class="decision-cap">逆算思考</span>
+          </button>
+          <button class="decision-row" type="button" data-capability="timing">
+            <span class="decision-game">予約する／待つ</span>
+            <i aria-hidden="true">→</i>
+            <span class="decision-cap">効率とスピード</span>
+          </button>
+          <button class="decision-row" type="button" data-capability="market">
+            <span class="decision-game">相手と市場を見る</span>
+            <i aria-hidden="true">→</i>
+            <span class="decision-cap">競争理解</span>
+          </button>
+        </div>
+
+        <div class="capability-panel reveal" id="capability-panel" aria-live="polite">
+          <div>
+            <span class="panel-label" id="capability-code">能力 01</span>
+            <h3 id="capability-title">資産化</h3>
+          </div>
+          <p id="capability-copy">その場で使う宝石を、何度も効くカードへ変える。次の仕事を楽にする資産をつくる力。</p>
+          <div class="capability-signal">
+            <span>ゲーム内のサイン</span>
+            <strong id="capability-signal">次の購入コストを下げる一手を選べたか</strong>
+          </div>
+        </div>
+        <div class="major-decision-prompt reveal">
+          <p class="panel-label">戦略的タイミング / 追加の問い</p>
+          <h3>ゲームの中で、あなたの最大の意思決定ポイントはどこだった？</h3>
+          <p>「100点」の選択肢がない中でも、なぜその意思決定に至った？ 結果として正解だった？ 不正解だった？</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pattern-section section-full" aria-labelledby="pattern-title">
+      <div class="section-inner narrow">
+        <p class="section-index reveal">03 / 意思決定の癖を知る</p>
+        <h2 id="pattern-title" class="section-title reveal">あなたの癖は、<br>戦略になる。</h2>
+        <div class="pattern-console reveal" id="pattern-console">
+          <div class="pattern-readout">
+            <span>あなたの意思決定タイプ</span>
+            <strong id="profile-name">未判定</strong>
+            <p id="profile-copy">3つの問いに答えると、今回の意思決定パターンが表示されます。</p>
+          </div>
+          <div class="pattern-question">
+            <p>勝ち筋はいつ決めた？</p>
+            <div class="choice-pair">
+              <button type="button" data-profile="planner">序盤から</button>
+              <button type="button" data-profile="adapter">盤面を見て</button>
+            </div>
+          </div>
+          <div class="pattern-question">
+            <p>相手の狙いに気づいたら？</p>
+            <div class="choice-pair">
+              <button type="button" data-profile="challenger">先に押さえる</button>
+              <button type="button" data-profile="builder">自分を伸ばす</button>
+            </div>
+          </div>
+          <div class="pattern-question">
+            <p>迷ったときの基準は？</p>
+            <div class="choice-pair">
+              <button type="button" data-profile="optimizer">効率</button>
+              <button type="button" data-profile="opportunist">機会</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="apply-section section-full" id="apply" aria-labelledby="apply-title">
+      <div class="section-inner">
+        <p class="section-index reveal">04 / 仕事に置き換える</p>
+        <h2 id="apply-title" class="mega-title compact reveal">仕事で<br>振り返る</h2>
+        <div class="apply-questions reveal">
+          <p>今の仕事で<br><strong>共通点はありますか？</strong></p>
+          <p>一手先を読む<br><strong>戦略性を持っていますか？</strong></p>
+          <p>正解がない中で<br><strong>「意思決定」はできていますか？</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section section-full" id="closing" aria-labelledby="closing-title">
+      <div class="section-inner narrow">
+        <p class="eyebrow reveal">最後の問い</p>
+        <h2 id="closing-title" class="statement-title reveal">ゴールは何？</h2>
+        <div class="closing-prompts reveal">
+          <p>何のために、その一手を打った？<br>いま、打っている？</p>
+          <p>自分が動くと他人の動きが変わる。<br>他人が動けば、自分も動きを変える。</p>
+          <p>絶対に動かなければいけない時や環境に置かれた時、あなたは何を重視して、何をする？</p>
+        </div>
+        <a class="text-action reveal" href="index.html"><span>ゲームガイドへ戻る</span><i>↗</i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><span class="brand-mark" aria-hidden="true">◆</span><strong>THE GUILD</strong></div>
+    <p>ゲーム × 能力開発</p>
+  </footer>
+
+  <script src="../../shared/app.js"></script>
+</body>
+</html>

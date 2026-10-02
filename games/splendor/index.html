@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="宝石を集め、商いを広げ、誰より早く威信を築く戦略ゲームガイド。">
+  <title>SPLENDOR — THE GUILD ゲームガイド</title>
+  <link rel="stylesheet" href="../../shared/styles.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="splendor-page" data-page="game" data-game="splendor">
+  <a class="skip-link" href="#main">本文へ移動</a>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="../../index.html" aria-label="ゲーム選択へ戻る">
+      <span class="brand-mark" aria-hidden="true">◆</span>
+      <span>THE GUILD</span>
+    </a>
+    <div class="header-status" aria-label="ページの種類">
+      <span class="status-dot" aria-hidden="true"></span>
+      GAME 01 / SPLENDOR
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="guide-hero section-full" id="game" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <img src="assets/cover.jpg" alt="" fetchpriority="high">
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-glint" aria-hidden="true"></div>
+      <div class="section-inner hero-content">
+        <p class="eyebrow reveal">GAME 01 / 宝石の煌めき × 成長の連鎖</p>
+        <h1 id="hero-title" class="guide-display reveal">宝石を集め、<br>商いを広げ、<br><span>威信を築け。</span></h1>
+        <p class="hero-hook reveal">買うほど、次の一手が強くなる。</p>
+        <div class="hero-meta reveal" aria-label="ゲーム概要">
+          <div><strong>2–4</strong><span>人</span></div>
+          <div><strong>30</strong><span>分</span></div>
+          <div><strong>15</strong><span>点で勝利</span></div>
+        </div>
+        <a class="primary-action hero-action reveal" href="#loop">
+          <span>3分で遊び方を知る</span><i aria-hidden="true">↓</i>
+        </a>
+      </div>
+    </section>
+
+    <section class="loop-section section-full" id="loop" aria-labelledby="loop-title">
+      <div class="section-inner">
+        <p class="section-index reveal">01 / ひと目でわかる</p>
+        <h2 id="loop-title" class="section-title reveal">勝利は、<br>連鎖から生まれる。</h2>
+        <p class="lead-copy reveal">宝石をカードへ変え、購入力を育てる。カードと貴族で<strong>15点</strong>を先に築こう。</p>
+        <ol class="game-loop reveal" aria-label="勝利までの循環">
+          <li><span class="loop-icon gem-sapphire" aria-hidden="true"></span><b>宝石を集める</b></li>
+          <li><span class="loop-icon loop-card" aria-hidden="true">◆</span><b>カードを買う</b></li>
+          <li><span class="loop-icon loop-discount" aria-hidden="true">−1</span><b>次が安くなる</b></li>
+          <li><span class="loop-icon loop-score" aria-hidden="true">15</span><b>威信を築く</b></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="setup-section section-full" id="setup" aria-labelledby="setup-title">
+      <div class="section-inner">
+        <p class="section-index reveal">02 / ゲームの準備</p>
+        <h2 id="setup-title" class="section-title reveal">人数を選んで、<br>場をつくる。</h2>
+        <div class="player-picker reveal" role="group" aria-label="プレイヤー人数">
+          <span>何人で遊ぶ？</span>
+          <div>
+            <button type="button" data-players="2" aria-pressed="false">2人</button>
+            <button type="button" data-players="3" aria-pressed="false">3人</button>
+            <button class="is-active" type="button" data-players="4" aria-pressed="true">4人</button>
+          </div>
+        </div>
+        <figure class="setup-visual reveal">
+          <img src="assets/setup.jpg" alt="発展カード、貴族タイル、宝石トークンを並べた初期配置" loading="lazy">
+        </figure>
+        <div class="setup-grid reveal" aria-live="polite">
+          <div><span>発展カード</span><strong>各レベル4枚</strong><small>計12枚を表向きに</small></div>
+          <div><span>貴族</span><strong id="noble-count">5枚</strong><small>プレイヤー数＋1枚</small></div>
+          <div><span>各色の宝石</span><strong id="gem-count">7個</strong><small>金貨は5個すべて</small></div>
+          <div><span>最初の人</span><strong>最も若い人</strong><small>時計回りに進める</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="turn-section section-full" id="turn" aria-labelledby="turn-title">
+      <div class="turn-glow" aria-hidden="true"></div>
+      <div class="section-inner">
+        <p class="section-index reveal">03 / あなたの手番</p>
+        <h2 id="turn-title" class="section-title reveal">4つから、<br>1つだけ。</h2>
+        <p class="lead-copy reveal">タップすると条件を確認できます。</p>
+        <div class="action-grid reveal" role="tablist" aria-label="手番でできる4つのアクション">
+          <button class="turn-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="turn-panel" data-turn="takeDifferent"><span>01</span><b>異なる3色を<br>1個ずつ取る</b></button>
+          <button class="turn-tab" type="button" role="tab" aria-selected="false" aria-controls="turn-panel" data-turn="takeSame"><span>02</span><b>同じ色を<br>2個取る</b></button>
+          <button class="turn-tab" type="button" role="tab" aria-selected="false" aria-controls="turn-panel" data-turn="buy"><span>03</span><b>カードを<br>1枚買う</b></button>
+          <button class="turn-tab" type="button" role="tab" aria-selected="false" aria-controls="turn-panel" data-turn="reserve"><span>04</span><b>カードを<br>1枚予約する</b></button>
+        </div>
+        <div class="turn-panel reveal" id="turn-panel" role="tabpanel" aria-live="polite">
+          <div class="turn-symbol" id="turn-symbol" aria-hidden="true">
+            <div class="take-option single-take-option"><div class="take-gems different-gems"><span class="mini-gem gem-sapphire"></span><span class="mini-gem gem-ruby"></span><span class="mini-gem gem-emerald"></span></div><b>異なる3色を<br>1個ずつ</b></div>
+          </div>
+          <div class="turn-copy">
+            <p class="panel-label" id="turn-label">アクション 01</p>
+            <h3 id="turn-heading">異なる3色を1個ずつ取る</h3>
+            <p id="turn-copy">場にある宝石から、違う色を3個まで取ります。</p>
+            <p class="rule-note" id="turn-note">金貨はこの方法では取れません。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mechanic-section section-full" id="mechanic" aria-labelledby="mechanic-title">
+      <div class="section-inner">
+        <p class="section-index reveal">04 / いちばん大事な仕組み</p>
+        <h2 id="mechanic-title" class="section-title reveal">買うほど、<br>次が安くなる。</h2>
+        <p class="lead-copy reveal">買ったカードは、同じ色の支払いを永久に1つ減らします。</p>
+        <div class="discount-demo reveal" aria-label="青3個が必要なカードの値引き例">
+          <p class="discount-label">青3個が必要なカードなら</p>
+          <div class="discount-cases">
+            <div><span>青カード</span><strong>0枚</strong><i aria-hidden="true">→</i><b>青宝石 3個</b></div>
+            <div><span>青カード</span><strong>1枚</strong><i aria-hidden="true">→</i><b>青宝石 2個</b></div>
+            <div class="is-best"><span>青カード</span><strong>2枚</strong><i aria-hidden="true">→</i><b>青宝石 1個</b></div>
+          </div>
+        </div>
+        <div class="card-glance reveal">
+          <div><p class="panel-label">カードは3か所だけ見る</p><h3>得点・コスト・色。</h3></div>
+          <img src="assets/card-anatomy.jpg" alt="カードの威信点、必要コスト、永久ボーナスを示す画像" loading="lazy">
+          <ul>
+            <li><span>左上</span><b>威信点</b></li>
+            <li><span>左下</span><b>支払う宝石</b></li>
+            <li><span>右上</span><b>永久ボーナスの色</b></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="tactics-section section-full" id="tactics" aria-labelledby="tactics-title">
+      <div class="section-inner">
+        <p class="section-index reveal">05 / ゲーム開始前に</p>
+        <h2 id="tactics-title" class="section-title reveal">盤面を見渡す。</h2>
+        <p class="tactics-lead reveal">自分のカードだけを見るな。盤面は静かに、次の一手を語っている。</p>
+        <div class="tactic-cards reveal">
+          <article><span>01</span><strong>欲しいカードから<br>逆算する</strong><p>必要な色を先に読む。</p></article>
+          <article><span>02</span><strong>相手の狙いを<br>観察する</strong><p>宝石とボーナスを見る。</p></article>
+          <article><span>03</span><strong>今の得点か、<br>未来の成長か</strong><p>一手の価値を選ぶ。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="rules-section section-full" id="rules" aria-labelledby="rules-title">
+      <div class="section-inner">
+        <p class="section-index reveal">06 / 終わり方と確認</p>
+        <h2 id="rules-title" class="section-title reveal">15点で、<br>最終ラウンド。</h2>
+        <div class="finish-rule reveal">
+          <div><strong>15</strong><span>威信点</span></div>
+          <p>誰かが15点以上になったら、そのラウンドまで全員が同じ回数だけ手番を行います。最高得点が勝者です。</p>
+        </div>
+        <p class="tie-rule reveal">同点なら、購入した発展カードが少ない人。それも同じなら同率勝利。</p>
+        <div class="help-box reveal">
+          <p class="panel-label">迷ったときだけ開く</p>
+          <details><summary>宝石は何個まで持てる？</summary><p>金貨を含めて最大10個。超えた分は手番の最後に返します。</p></details>
+          <details><summary>金貨はどう使う？</summary><p>予約したとき、場に残っていれば1個獲得。支払いでは好きな色1個の代わりになります。</p></details>
+          <details><summary>買ったカードは補充する？</summary><p>購入・予約したら、同じレベルの山札からすぐに1枚公開します。</p></details>
+          <details><summary>予約は何枚まで？</summary><p>最大3枚。公開カードか山札の一番上を予約でき、捨てることはできません。</p></details>
+          <details><summary>貴族はどうやって取る？</summary><p>購入済みカードだけで条件を満たすと自動で訪れます。1手番に1枚までです。</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="ready-section section-full" id="ready" aria-labelledby="ready-title">
+      <div class="section-inner narrow">
+        <p class="eyebrow reveal">準備はできた</p>
+        <h2 id="ready-title" class="statement-title reveal">さあ、<br>威信を築こう。</h2>
+        <p class="lead-copy reveal">まずは、このゲームに集中してください。</p>
+        <a class="secondary-action reveal" href="#turn"><span>手番をもう一度確認</span><i aria-hidden="true">↑</i></a>
+        <div class="next-game-gate reveal">
+          <p class="gate-label">AFTER PLAY / 振り返り</p>
+          <h3>その一手を、<br>仕事の力へ。</h3>
+          <a class="primary-action" href="insight.html"><span>Business Insightへ</span><i aria-hidden="true">↗</i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <nav class="mobile-dock" aria-label="ゲームガイド内メニュー">
+    <a href="#loop"><span aria-hidden="true">◆</span>ゲーム</a>
+    <a href="#setup"><span aria-hidden="true">▦</span>準備</a>
+    <a href="#turn"><span aria-hidden="true">◎</span>手番</a>
+    <a href="#rules"><span aria-hidden="true">?</span>確認</a>
+  </nav>
+
+  <footer class="site-footer">
+    <div><span class="brand-mark" aria-hidden="true">◆</span><strong>THE GUILD</strong></div>
+    <p>ゲーム × 能力開発</p>
+  </footer>
+  <script src="../../shared/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+.splendor-page { --game-accent:var(--gold); }
+.splendor-page .brand-mark,.splendor-page .insight-status { color:var(--gold-light); }
+.splendor-page .status-dot { background:var(--gold); box-shadow:0 0 12px rgba(214,177,94,.65); }
