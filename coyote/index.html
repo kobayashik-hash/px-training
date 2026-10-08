@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080c15">
+  <meta name="description" content="自分だけ見えないカードを推理し、数字を上げ、見破るゲーム「COYOTE」のプレイガイド。">
+  <title>COYOTE — THE GUILD ゲームガイド</title>
+  <link rel="stylesheet" href="../../shared/styles.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="coyote-page" data-page="coyote" data-game="coyote">
+  <a class="skip-link" href="#main">本文へ移動</a>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="../../index.html" aria-label="ゲーム選択へ戻る">
+      <span class="brand-mark coyote-mark" aria-hidden="true">▲</span>
+      <span>THE GUILD</span>
+    </a>
+    <div class="header-status coyote-status" aria-label="ページの種類">
+      <span class="status-dot" aria-hidden="true"></span>
+      GAME 02 / COYOTE
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="coyote-hero section-full" id="c-overview" aria-labelledby="coyote-title">
+      <div class="coyote-grid" aria-hidden="true"></div>
+      <div class="coyote-scan" aria-hidden="true"></div>
+      <div class="section-inner coyote-hero-inner">
+        <p class="eyebrow reveal">GAME 02 / READ · GUESS · RAISE · CALL</p>
+        <div class="coyote-card-scene reveal" aria-hidden="true">
+          <span class="c-card c-card-one">5</span>
+          <span class="c-card c-card-you"><i>YOU</i>?</span>
+          <span class="c-card c-card-three">−5</span>
+          <span class="c-card c-card-four">20</span>
+        </div>
+        <p class="coyote-name reveal"><span>COYOTE</span><small>コヨーテ</small></p>
+        <h1 id="coyote-title" class="coyote-display reveal">見える。<br>でも、<span>自分だけ<br>見えない。</span></h1>
+        <p class="hero-hook coyote-hook reveal">他人のカードを読み、場にいるコヨーテの数を推理する。</p>
+        <div class="coyote-dilemma reveal"><span>数字を上げる</span><b>OR</b><span>「コヨーテ！」</span></div>
+        <a class="primary-action coyote-primary reveal" href="#c-how"><span>遊び方を見る</span><i aria-hidden="true">↓</i></a>
+      </div>
+    </section>
+
+    <section class="coyote-how section-full" id="c-how" aria-labelledby="c-how-title">
+      <div class="section-inner">
+        <p class="section-index reveal">01 / どんなゲーム？</p>
+        <h2 id="c-how-title" class="section-title reveal">読む。上げる。<br><span class="coral">見破る。</span></h2>
+        <ol class="coyote-loop reveal" aria-label="ゲームの基本的な流れ">
+          <li><span>01</span><b>SEE</b><p>相手のカードを見る</p></li>
+          <li><span>02</span><b>GUESS</b><p>合計数を推理する</p></li>
+          <li><span>03</span><b>DECLARE</b><p>数字を宣言する</p></li>
+          <li class="is-call"><span>04</span><b>CALL</b><p>怪しいなら「コヨーテ！」</p></li>
+        </ol>
+        <p class="blind-note reveal"><i aria-hidden="true">?</i><span>他人の情報は見える。<br><strong>自分の情報だけ見えない。</strong></span></p>
+      </div>
+    </section>
+
+    <section class="coyote-goal section-full" aria-labelledby="c-goal-title">
+      <div class="section-inner">
+        <p class="section-index reveal">02 / ゲームの目的</p>
+        <h2 id="c-goal-title" class="section-title reveal">少なくとも、<br>何匹いる？</h2>
+        <p class="lead-copy reveal">自分以外のカードを見て、場にいるコヨーテの数を推理。宣言が実際の合計を超えたら、その宣言者が負けます。</p>
+        <div class="declare-check reveal" aria-label="宣言から勝利までの流れ">
+          <div><span>DECLARE</span><strong>数字を宣言</strong></div><i>↓</i>
+          <div><span>CHECK</span><strong>実数と比較</strong></div><i>↓</i>
+          <div><span>SURVIVE</span><strong>最後まで残る</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blind-spot section-full" id="c-blind" aria-labelledby="c-blind-title">
+      <div class="blind-rings" aria-hidden="true"><i></i><i></i></div>
+      <div class="section-inner">
+        <p class="eyebrow coral reveal">THE CORE MECHANIC / THE BLIND SPOT</p>
+        <h2 id="c-blind-title" class="statement-title reveal">自分の数字だけ、<br><span class="coral">自分には見えない。</span></h2>
+        <div class="player-orbit reveal" aria-label="4人のカード例。自分のカードだけ不明">
+          <div class="orbit-player player-a"><small>PLAYER A</small><strong>5</strong></div>
+          <div class="orbit-player player-b"><small>PLAYER B</small><strong>−5</strong></div>
+          <div class="orbit-player player-c"><small>PLAYER C</small><strong>20</strong></div>
+          <div class="orbit-player player-you"><small>YOU</small><strong>?</strong></div>
+        </div>
+        <p class="core-copy reveal">見える情報だけで、<br>見えない1枚を推理する。</p>
+      </div>
+    </section>
+
+    <section class="coyote-hold section-full" aria-labelledby="c-hold-title">
+      <div class="section-inner">
+        <p class="section-index reveal">04 / カードの持ち方</p>
+        <h2 id="c-hold-title" class="section-title reveal">見ない。<br>額へ掲げる。</h2>
+        <div class="forehead-demo reveal" aria-label="カードを額に掲げる持ち方の図解">
+          <div class="head-figure" aria-hidden="true"><span class="hair"></span><span class="face"></span><span class="hand"></span><b class="forehead-card">?</b></div>
+          <div class="hold-rules">
+            <p><span>YOU</span><strong>表を見ない</strong><small>裏面だけが自分に見える</small></p>
+            <p><span>OTHERS</span><strong>数字が見える</strong><small>表面を全員へ向ける</small></p>
+          </div>
+        </div>
+        <p class="warning-copy reveal"><b>絶対に、自分の表を見ない。</b><br>受け取ったらそのまま額へ。</p>
+      </div>
+    </section>
+
+    <section class="coyote-life section-full" aria-labelledby="c-life-title">
+      <div class="section-inner">
+        <p class="section-index reveal">05 / ライフ</p>
+        <h2 id="c-life-title" class="section-title reveal">3回負けたら、<br>ゲームから脱落。</h2>
+        <div class="life-equation reveal"><span>身代わり</span><b>＋</b><span>身代わり</span><b>＋</b><span>自分</span><i>＝</i><strong>LIFE 3</strong></div>
+        <ol class="life-track reveal" aria-label="3回負けるまでのライフ変化">
+          <li><span>START</span><b>● ● ●</b></li>
+          <li><span>1 HIT</span><b>● ● ○</b></li>
+          <li><span>2 HIT</span><b>● ○ ○</b></li>
+          <li class="life-over"><span>3 HIT</span><b>○ ○ ○</b><strong>GAME OVER</strong></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="coyote-setup section-full" aria-labelledby="c-setup-title">
+      <div class="section-inner">
+        <p class="section-index reveal">06 / ROUND START</p>
+        <h2 id="c-setup-title" class="section-title reveal">配る。掲げる。<br>遠吠えする。</h2>
+        <ol class="setup-steps reveal">
+          <li><span>01</span><p><strong>ナンバーカードをよく混ぜる</strong></p></li>
+          <li><span>02</span><p><strong>全員に1枚ずつ裏向きで配る</strong></p></li>
+          <li><span>03</span><p><strong>自分は見ず、そのまま額へ</strong></p></li>
+          <li><span>04</span><p><strong>残りを裏向きの山札にする</strong></p></li>
+        </ol>
+        <div class="howl-card reveal"><span>WHO GOES FIRST?</span><strong>いちばん上手に<br>「コヨーテ」と鳴けた人。</strong><i aria-hidden="true">Awoo! / 以後は時計回り</i></div>
+      </div>
+    </section>
+
+    <section class="coyote-turn section-full" id="c-turn" aria-labelledby="c-turn-title">
+      <div class="turn-glow coyote-turn-glow" aria-hidden="true"></div>
+      <div class="section-inner">
+        <p class="section-index reveal">07 / YOUR TURN</p>
+        <h2 id="c-turn-title" class="coyote-turn-title reveal">YOUR TURN<br><span>2 CHOICES</span></h2>
+        <div class="coyote-turn-tabs reveal" role="tablist" aria-label="手番の2つの選択肢">
+          <button class="coyote-turn-tab is-active" type="button" role="tab" aria-selected="true" data-coyote-turn="raise"><span>ACTION 01</span><strong>RAISE</strong><small>数字を上げる</small></button>
+          <button class="coyote-turn-tab is-call" type="button" role="tab" aria-selected="false" data-coyote-turn="call"><span>ACTION 02</span><strong>CALL</strong><small>コヨーテ！</small></button>
+        </div>
+        <div class="coyote-turn-panel reveal" id="coyote-turn-panel" role="tabpanel" aria-live="polite">
+          <div class="raise-meter" id="coyote-turn-visual" aria-hidden="true"><span>3</span><i>→</i><span>5</span><i>→</i><span>8</span><i>→</i><span>12</span></div>
+          <p class="panel-label" id="coyote-turn-label">ACTION 01 / RAISE</p>
+          <h3 id="coyote-turn-heading">前の数字より、大きく。</h3>
+          <p id="coyote-turn-copy">前の宣言が実際の合計を超えていないと思ったら、前より大きな整数を宣言します。</p>
+          <p class="rule-note" id="coyote-turn-note">下げることはできません。宣言できる数字に上限はありません。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="round-flow section-full" aria-labelledby="round-flow-title">
+      <div class="section-inner narrow">
+        <p class="section-index reveal">08 / ROUND FLOW</p>
+        <h2 id="round-flow-title" class="section-title reveal">数字は、<br>戻らない。</h2>
+        <ol class="bid-flow reveal" aria-label="数字が徐々に上がるプレイ例">
+          <li><span>PLAYER A</span><strong>3</strong></li>
+          <li><span>PLAYER B</span><strong>5</strong></li>
+          <li><span>PLAYER C</span><strong>8</strong></li>
+          <li><span>PLAYER D</span><strong>12</strong></li>
+          <li class="bid-call"><span>PLAYER A</span><strong>COYOTE!</strong></li>
+        </ol>
+        <p class="tension-copy reveal">上げるたび、<br><strong>「本当にいるか？」</strong>が近づいてくる。</p>
+      </div>
+    </section>
+
+    <section class="coyote-judgement section-full" aria-labelledby="c-judge-title">
+      <div class="section-inner">
+        <p class="section-index reveal">09 / 「COYOTE!」のあと</p>
+        <h2 id="c-judge-title" class="section-title reveal">宣言と実数を、<br>比べる。</h2>
+        <div class="after-call reveal"><span>全員のカードを集める</span><i>↓</i><span>実際の合計を計算</span><i>↓</i><span>直前の宣言と比較</span></div>
+        <div class="versus reveal">
+          <div><small>DECLARE</small><strong>30</strong></div><b>VS</b><div><small>ACTUAL</small><strong>26</strong></div>
+        </div>
+        <div class="judgement-cases reveal">
+          <article><span>宣言 ＞ 実際の合計</span><strong>DECLARER<br>LOSES</strong><p>数字を宣言した人が負け</p></article>
+          <article><span>宣言 ≦ 実際の合計</span><strong>CALLER<br>LOSES</strong><p>「コヨーテ！」と言った人が負け</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="coyote-calc section-full" aria-labelledby="c-calc-title">
+      <div class="section-inner">
+        <p class="section-index reveal">10 / 計算方法</p>
+        <h2 id="c-calc-title" class="section-title reveal">基本を足す。<br>特殊は、そのあと。</h2>
+        <div class="calc-cards reveal" aria-label="20足す1引く5足す2の計算例">
+          <span class="calc-positive">20</span><i>＋</i><span class="calc-positive">1</span><i>−</i><span class="calc-negative">5</span><i>＋</i><span class="calc-positive">2</span>
+        </div>
+        <div class="calc-special reveal"><span>基本カードの合計</span><strong>18</strong><i>× 2</i><span>酋長カード</span></div>
+        <p class="calc-answer reveal"><span>ACTUAL</span><strong>36</strong></p>
+        <p class="rule-note reveal">順番：まず基本カードを合計し、その後に特殊カードの効果を反映します。</p>
+      </div>
+    </section>
+
+    <section class="coyote-cards section-full" id="c-cards" aria-labelledby="c-cards-title">
+      <div class="section-inner wide">
+        <p class="section-index reveal">11 / カード一覧</p>
+        <h2 id="c-cards-title" class="section-title reveal">数字だけでは、<br>終わらない。</h2>
+        <div class="card-category reveal">
+          <p class="card-category-title"><span>BASIC CARDS</span>基本カード</p>
+          <article class="basic-card-preview">
+            <span class="card-art" style="--slot:0"><img src="assets/card-art.png" alt="数字1のコヨーテカード"></span>
+            <div><strong>コヨーテカード</strong><p>見えているカードから、場の合計を推理する。</p></div>
+          </article>
+          <div class="basic-deck"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>10</i><i>15</i><i>20</i></div>
+          <div class="basic-extras">
+            <article><span class="card-art" style="--slot:2"><img src="assets/card-art.png" alt="数字0のおばけカード"></span><div><strong>おばけカード</strong><p>数には加えない。</p></div></article>
+            <article><span class="card-art" style="--slot:1"><img src="assets/card-art.png" alt="マイナス5の兵隊カード"></span><div><strong>兵隊カード</strong><p>合計から減らす。−5と−10がある。</p></div></article>
+          </div>
+        </div>
+        <div class="card-category reveal">
+          <p class="card-category-title coral"><span>SPECIAL CARDS</span>特殊カード</p>
+          <div class="special-grid">
+            <article><span class="card-art" style="--slot:3"><img src="assets/card-art.png" alt="夜カード"></span><div><span>NIGHT</span><strong>夜カード</strong><p>数には加えない。計算後、すべてのナンバーカードをまとめてシャッフル。</p></div></article>
+            <article><span class="card-art" style="--slot:4"><img src="assets/card-art.png" alt="数字を2倍にする酋長カード"></span><div><span>CHIEF</span><strong>酋長カード</strong><p>すべての基本カードの数字を2倍にする。</p></div></article>
+            <article><span class="card-art" style="--slot:5"><img src="assets/card-art.png" alt="最大値を0にするキツネカード"></span><div><span>FOX</span><strong>キツネカード</strong><p>その回に出た最大のコヨーテカードの数値を0にする。</p></div></article>
+            <article><span class="card-art" style="--slot:6"><img src="assets/card-art.png" alt="山札から1枚引くほらあなカード"></span><div><span>CAVE</span><strong>ほらあなカード</strong><p>持っていた人が山札から1枚引き、その数字を加える。</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="next-round section-full" aria-labelledby="next-title">
+      <div class="section-inner">
+        <p class="section-index reveal">12 / NEXT ROUND</p>
+        <h2 id="next-title" class="section-title reveal">捨てる。配る。<br>もう一度。</h2>
+        <ol class="next-steps reveal">
+          <li><span>01</span><strong>使用したカードを捨て札へ</strong></li>
+          <li><span>02</span><strong>山札から新しい1枚を配る</strong></li>
+          <li><span>03</span><strong>足りなければ捨て札を混ぜ直す</strong></li>
+        </ol>
+        <div class="starter-rule reveal"><span>NEXT STARTER</span><strong>前のラウンドで<br>負けたプレイヤー</strong><p>その人が脱落した場合は、ラウンドの勝者から。</p></div>
+      </div>
+    </section>
+
+    <section class="coyote-gameover section-full" aria-labelledby="gameover-title">
+      <div class="section-inner">
+        <p class="section-index reveal">13 / GAME OVER</p>
+        <h2 id="gameover-title" class="gameover-display reveal"><span>LIFE 0</span>GAME<br>OVER</h2>
+        <p class="gameover-copy reveal">3回負けたプレイヤーは脱落。<br><strong>最後まで生き残った1人が勝者。</strong></p>
+        <p class="last-standing reveal">LAST ONE<br><span>STANDING</span></p>
+        <details class="optional-rule reveal"><summary>3・4人で遊ぶときのおすすめ設定</summary><p>身代わり人形を増やし、ライフカードを1人2枚使って3体または4体で始める設定がおすすめです。</p></details>
+      </div>
+    </section>
+
+    <section class="quick-guide section-full" id="c-quick" aria-labelledby="quick-title">
+      <div class="section-inner">
+        <p class="section-index reveal">14 / QUICK GUIDE</p>
+        <h2 id="quick-title" class="section-title reveal">迷ったら、<br>ここだけ。</h2>
+        <ol class="quick-list reveal">
+          <li><span>01</span><strong>カードを1枚ずつ配る</strong></li>
+          <li><span>02</span><strong>自分は見ず、そのまま額へ</strong></li>
+          <li><span>03</span><strong>最初の人が1以上の整数を宣言</strong></li>
+          <li class="quick-choice"><span>04</span><strong>次の人は<br><b>数字を上げる</b> <i>OR</i> <b>コヨーテ！</b></strong></li>
+          <li><span>05</span><strong>「コヨーテ！」が出たら合計</strong></li>
+          <li><span>06</span><strong>負けた人が1ダメージ</strong></li>
+          <li><span>07</span><strong>最後の1人になるまで続ける</strong></li>
+        </ol>
+        <a class="secondary-action reveal" href="#c-turn"><span>手番を確認する</span><i aria-hidden="true">↑</i></a>
+      </div>
+    </section>
+
+    <section class="coyote-faq section-full" aria-labelledby="faq-title">
+      <div class="section-inner">
+        <p class="section-index reveal">15 / 迷いやすいルール</p>
+        <h2 id="faq-title" class="section-title reveal">困ったときだけ、<br>開く。</h2>
+        <div class="help-box coyote-help reveal">
+          <details><summary>自分のカードを見ていい？</summary><p>見てはいけません。表を全員へ向けたまま額に掲げます。</p></details>
+          <details><summary>最初の数字は0でもいい？</summary><p>0は不可。1以上の整数を宣言します。</p></details>
+          <details><summary>数字はいくつまで宣言できる？</summary><p>上限はありません。</p></details>
+          <details><summary>次の人は数字を下げられる？</summary><p>下げられません。前より大きな数字か「コヨーテ！」のどちらかです。</p></details>
+          <details><summary>特殊カードはいつ計算する？</summary><p>まず基本カードを合計し、その後に特殊カードの効果を反映します。</p></details>
+          <details><summary>負けるのは誰？</summary><p>直前の宣言が実数より大きければ宣言者。実数以下なら「コヨーテ！」を言った人です。</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="coyote-watch section-full" aria-labelledby="watch-title">
+      <div class="section-inner">
+        <p class="section-index reveal">16 / ゲーム開始前に</p>
+        <h2 id="watch-title" class="section-title reveal">見えているのは、<br><span class="coral">数字だけじゃない。</span></h2>
+        <div class="watch-list reveal">
+          <article><span>01</span><strong>他プレイヤーの<br>カード</strong></article>
+          <article><span>02</span><strong>これまで宣言された<br>数字</strong></article>
+          <article><span>03</span><strong>他プレイヤーの<br>反応</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="coyote-ready section-full" id="c-ready" aria-labelledby="c-ready-title">
+      <div class="section-inner narrow">
+        <p class="eyebrow reveal">READY TO PLAY</p>
+        <h2 id="c-ready-title" class="statement-title reveal">さあ、<br><span class="coral">見破ろう。</span></h2>
+        <p class="lead-copy reveal">まず遊ぶ。<br>意味づけは、そのあと。</p>
+        <a class="secondary-action reveal" href="#c-turn"><span>手番を確認する</span><i aria-hidden="true">↑</i></a>
+        <div class="insight-gate coyote-gate reveal" id="insight-gate">
+          <p class="gate-label">ゲームを終えたら</p>
+          <h3>振り返りへ。</h3>
+          <button class="primary-action coyote-primary" id="unlock-insights" type="button"><span>ゲームを終えた</span><i aria-hidden="true">✓</i></button>
+          <a class="primary-action coyote-primary insight-link" id="insight-link" href="insight.html" hidden><span>振り返りへ進む</span><i aria-hidden="true">↗</i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <nav class="mobile-dock coyote-dock" aria-label="COYOTEゲームガイド内メニュー">
+    <a href="#c-overview"><span aria-hidden="true">◉</span>概要</a>
+    <a href="#c-turn"><span aria-hidden="true">↑</span>手番</a>
+    <a href="#c-cards"><span aria-hidden="true">▤</span>カード</a>
+    <a href="#c-quick"><span aria-hidden="true">?</span>早見表</a>
+  </nav>
+
+  <footer class="site-footer">
+    <div><span class="brand-mark coyote-mark" aria-hidden="true">▲</span><strong>THE GUILD</strong></div>
+    <p>GAME × CAPABILITY DEVELOPMENT</p>
+  </footer>
+  <script src="../../shared/app.js"></script>
+</body>
+</html>

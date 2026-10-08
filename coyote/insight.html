@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080c15">
+  <meta name="description" content="COYOTEの判断を、現実の能力へ接続するBusiness Insight。">
+  <title>COYOTE Business Insight — THE GUILD</title>
+  <link rel="stylesheet" href="../../shared/styles.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="coyote-page" data-page="insight" data-game="coyote">
+  <a class="skip-link" href="#main">本文へ移動</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="ゲームガイドへ戻る">
+      <span class="brand-mark coyote-mark" aria-hidden="true">▲</span>
+      <span>THE GUILD</span>
+    </a>
+    <div class="header-status insight-status coyote-status"><span class="status-dot" aria-hidden="true"></span>振り返り</div>
+  </header>
+
+  <main id="main">
+    <section class="insight-hero section-full" aria-labelledby="insight-title">
+      <div class="insight-rings" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="section-inner">
+        <p class="eyebrow reveal">COYOTE / BUSINESS INSIGHT</p>
+        <h1 id="insight-title" class="insight-display reveal">見えない中で、<br>何を信じて<br>決めた？</h1>
+        <p class="hero-lead reveal">不確実な状況での判断を、<br>意識的な能力へ。</p>
+      </div>
+    </section>
+
+    <section class="flow-section section-full" aria-labelledby="flow-title">
+      <div class="section-inner">
+        <p class="section-index reveal">体験を能力へつなぐ流れ</p>
+        <h2 id="flow-title" class="sr-only">Play Reflect Connect Apply</h2>
+        <div class="learning-flow reveal">
+          <article class="flow-item is-current"><span>01</span><strong>遊ぶ</strong><p>PLAY</p></article><i aria-hidden="true"></i>
+          <article class="flow-item"><span>02</span><strong>振り返る</strong><p>REFLECT</p></article><i aria-hidden="true"></i>
+          <article class="flow-item"><span>03</span><strong>つなぐ</strong><p>CONNECT</p></article><i aria-hidden="true"></i>
+          <article class="flow-item"><span>04</span><strong>試す</strong><p>APPLY</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reflect-section section-full" id="reflect" aria-labelledby="reflect-title">
+      <div class="section-inner">
+        <p class="section-index reveal">01 / 振り返る</p>
+        <h2 id="reflect-title" class="section-title reveal">何を見て、<br>どこで疑った？</h2>
+        <p class="statement-copy reveal">正解ではなく、判断の根拠を思い出す。</p>
+        <div class="reflection-stack reveal">
+          <button class="reflection-card" type="button" aria-expanded="false"><span class="reflection-no">Q1</span><strong>最初の宣言はいくつだった？</strong><p>見えている何を根拠に、その数字を選んだ？</p><i>＋</i></button>
+          <button class="reflection-card" type="button" aria-expanded="false"><span class="reflection-no">Q2</span><strong>数字を大きく変えた瞬間は？</strong><p>カードか、声か、表情か。何が判断を動かした？</p><i>＋</i></button>
+          <button class="reflection-card" type="button" aria-expanded="false"><span class="reflection-no">Q3</span><strong>「コヨーテ！」と言った瞬間は？</strong><p>確信していた？ それとも、これ以上進めないと感じた？</p><i>＋</i></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="connect-section section-full" id="connect" aria-labelledby="connect-title">
+      <div class="section-inner">
+        <p class="section-index reveal">02 / 能力につなぐ</p>
+        <h2 id="connect-title" class="mega-title compact reveal">意思決定<br>マップ</h2>
+        <p class="mechanic-thesis reveal">見えない情報への向き合い方には、名前がある。</p>
+        <div class="decision-map reveal">
+          <button class="decision-row is-active" type="button" data-capability="read"><span class="decision-game">全員のカードを見る</span><i aria-hidden="true">→</i><span class="decision-cap">情報統合</span></button>
+          <button class="decision-row" type="button" data-capability="uncertainty"><span class="decision-game">自分のカードだけ見えない</span><i aria-hidden="true">→</i><span class="decision-cap">不確実性判断</span></button>
+          <button class="decision-row" type="button" data-capability="calibration"><span class="decision-game">宣言を上げ続ける</span><i aria-hidden="true">→</i><span class="decision-cap">仮説更新</span></button>
+          <button class="decision-row" type="button" data-capability="dissent"><span class="decision-game">「コヨーテ！」と止める</span><i aria-hidden="true">→</i><span class="decision-cap">異論提示</span></button>
+          <button class="decision-row" type="button" data-capability="risk"><span class="decision-game">ライフを守る</span><i aria-hidden="true">→</i><span class="decision-cap">リスク管理</span></button>
+          <button class="decision-row" type="button" data-capability="people"><span class="decision-game">声と反応を読む</span><i aria-hidden="true">→</i><span class="decision-cap">対人洞察</span></button>
+        </div>
+        <div class="capability-panel reveal" id="capability-panel" aria-live="polite">
+          <div><span class="panel-label" id="capability-code">能力 01</span><h3 id="capability-title">情報統合</h3></div>
+          <p id="capability-copy">断片的な情報を集め、全体像を組み立てる。数字だけでなく、状況の変化も判断材料にする力。</p>
+          <div class="capability-signal"><span>ゲーム内のサイン</span><strong id="capability-signal">見えているカードを漏れなく判断に使えたか</strong></div>
+        </div>
+        <div class="major-decision-prompt reveal">
+          <p class="panel-label">不確実性の中の判断 / 追加の問い</p>
+          <h3>十分な情報がないのに、なぜその数字を選べた？</h3>
+          <p>待つ・進む・止める。どの時点で情報収集を終え、意思決定へ切り替えた？</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pattern-section section-full" aria-labelledby="pattern-title">
+      <div class="section-inner narrow">
+        <p class="section-index reveal">03 / 意思決定の癖を知る</p>
+        <h2 id="pattern-title" class="section-title reveal">あなたの読み方は、<br>戦略になる。</h2>
+        <div class="pattern-console reveal" id="pattern-console">
+          <div class="pattern-readout"><span>あなたの意思決定タイプ</span><strong id="profile-name">未判定</strong><p id="profile-copy">3つの問いに答えると、今回の意思決定パターンが表示されます。</p></div>
+          <div class="pattern-question"><p>迷ったとき、数字は？</p><div class="choice-pair"><button type="button" data-profile="cautious">安全側</button><button type="button" data-profile="bold">攻める</button></div></div>
+          <div class="pattern-question"><p>重視した情報は？</p><div class="choice-pair"><button type="button" data-profile="analyst">カード</button><button type="button" data-profile="observer">反応</button></div></div>
+          <div class="pattern-question"><p>「コヨーテ！」は？</p><div class="choice-pair"><button type="button" data-profile="challenger">早めに言う</button><button type="button" data-profile="confirmer">確信まで待つ</button></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="apply-section section-full" id="apply" aria-labelledby="apply-title">
+      <div class="section-inner">
+        <p class="section-index reveal">04 / 仕事に置き換える</p>
+        <h2 id="apply-title" class="mega-title compact reveal">仕事で<br>振り返る</h2>
+        <div class="apply-questions reveal">
+          <p>情報が足りない時も<br><strong>判断を止めずに進めていますか？</strong></p>
+          <p>新しい情報に合わせて<br><strong>仮説を更新していますか？</strong></p>
+          <p>違和感を覚えた時に<br><strong>異論を言葉にできていますか？</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section section-full" id="closing" aria-labelledby="closing-title">
+      <div class="section-inner narrow">
+        <p class="eyebrow reveal">最後の問い</p>
+        <h2 id="closing-title" class="statement-title reveal">何を信じて、<br>決める？</h2>
+        <div class="closing-prompts reveal">
+          <p>見えている事実と、自分の推測を分けられていた？</p>
+          <p>周囲の反応に流された？ それとも、判断材料として使った？</p>
+          <p>次に同じ状況が来たら、どの情報を先に確かめる？</p>
+        </div>
+        <a class="text-action reveal" href="index.html"><span>ゲームガイドへ戻る</span><i>↗</i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div><span class="brand-mark coyote-mark" aria-hidden="true">▲</span><strong>THE GUILD</strong></div><p>GAME × CAPABILITY DEVELOPMENT</p></footer>
+  <script src="../../shared/app.js"></script>
+</body>
+</html>
